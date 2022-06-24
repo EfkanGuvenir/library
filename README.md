@@ -9,5 +9,6 @@ lib_deps =
 	https://github.com/EfkanGuvenir/library#TinyGSM
     	https://github.com/EfkanGuvenir/library#UniversalTelegramBot
 	https://github.com/EfkanGuvenir/library#ArduinoJson
+	https://github.com/EfkanGuvenir/library#FastLED
 ```
 

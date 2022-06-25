@@ -1,3 +1,3 @@
-Kullanımdan Kaldırıldı.
+# 1.10.5
 
-### Yerine [FastLED](https://github.com/EfkanGuvenir/library/tree/FastLED) Kullanılması Önerilir.
+### [Library]([https://github.com/EfkanGuvenir/library/tree/FastLED](https://github.com/adafruit/Adafruit_NeoPixel))

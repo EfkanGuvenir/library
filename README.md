@@ -10,5 +10,6 @@ lib_deps =
     	https://github.com/EfkanGuvenir/library#UniversalTelegramBot
 	https://github.com/EfkanGuvenir/library#ArduinoJson
 	https://github.com/EfkanGuvenir/library#rc-switch
+	https://github.com/EfkanGuvenir/library#EEPROMEx
 ```
 

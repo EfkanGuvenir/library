@@ -1,13 +1,3 @@
-Simple Arduino Timer
-====================
-
-## [Library Kanak](https://github.com/kiryanenko/SimpleTimer)
-
-A simple Arduino library for work with time. 
-
-## Example
-
-```cpp
 #include <SimpleTimer.h>
 
 // Create a first timer and specify its interval in milliseconds
@@ -42,7 +32,3 @@ void loop()
         secondTimer.reset();                        // Reset a second timer
     }
 }
-```
-
-# License
-Copyright (c) 2019 Alexander Kiryanenko. Licensed under the MIT license.

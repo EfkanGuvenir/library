@@ -1,18 +1,8 @@
-# library
+[Virtual Wire](https://www.pjrc.com/teensy/td_libs_VirtualWire.html)
 
-`platformio.ini` add
+This is the VirtualWire library for Arduino
+It provides a simple message passing protocol for a range of inexpensive
+transmitter and receiver modules.
 
-```c++
-lib_deps =
-	https://github.com/EfkanGuvenir/library#WiFiManager
-	https://github.com/EfkanGuvenir/library#FastLED
-	https://github.com/EfkanGuvenir/library#TinyGSM
-    	https://github.com/EfkanGuvenir/library#UniversalTelegramBot
-	https://github.com/EfkanGuvenir/library#ArduinoJson
-	https://github.com/EfkanGuvenir/library#rc-switch
-	https://github.com/EfkanGuvenir/library#EEPROMEx
-	https://github.com/EfkanGuvenir/library#SimpleTimer
-	https://github.com/EfkanGuvenir/library#TM1637
-	https://github.com/EfkanGuvenir/library#Smoothed
-```
+See http://www.open.com.au/mikem/arduino/VirtualWire.pdf for full documentation.
 

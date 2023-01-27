@@ -14,5 +14,6 @@ lib_deps =
 	https://github.com/EfkanGuvenir/library#SimpleTimer
 	https://github.com/EfkanGuvenir/library#TM1637
 	https://github.com/EfkanGuvenir/library#Smoothed
+	https://github.com/EfkanGuvenir/library#VirtualWire
 ```
 

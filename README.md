@@ -1,4 +1,4 @@
-[Virtual Wire](https://www.pjrc.com/teensy/td_libs_VirtualWire.html)
+Virtual Wire
 
 This is the VirtualWire library for Arduino
 It provides a simple message passing protocol for a range of inexpensive

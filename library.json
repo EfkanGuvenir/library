@@ -1,0 +1,28 @@
+{
+  "frameworks": [
+    "arduino"
+  ],
+  "keywords": [
+    "rf",
+    "radio",
+    "protocol"
+  ],
+  "version": "1.27",
+  "platforms": [
+    "*"
+  ],
+  "downloadUrl": "http://www.airspayce.com/mikem/arduino/VirtualWire/VirtualWire-1.27.zip",
+  "name": "VirtualWire",
+  "description": "It provides a simple message passing protocol for a range of inexpensive transmitter and receiver modules",
+  "authors": [
+    {
+      "name": "Mike McCauley",
+      "email": "mikem@airspayce.com"
+    }
+  ],
+  "export": {
+    "exclude": [
+      "doc"
+    ]
+  }
+}

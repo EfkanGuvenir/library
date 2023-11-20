@@ -7,10 +7,7 @@
 [![Codacy grade](https://img.shields.io/codacy/grade/d19ea847574d443a8433655ee1d17843.svg?logo=codacy&logoColor=ffffff)](https://www.codacy.com/app/MattFryer/Smoothed)
 [![GitHub license](https://img.shields.io/github/license/MattFryer/Smoothed.svg?logo=gnu&logoColor=ffffff)](https://github.com/MattFryer/Smoothed/blob/master/LICENSE)
 
-# [Kaynak](https://github.com/MattFryer/Smoothed)
-
 # Smoothed
-
 An Arduino library to store and smooth sensor inputs using various methods including:
 *  a simple moving average of the last x sensor readings
 *  a simple linear recursive exponential filter

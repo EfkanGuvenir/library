@@ -66,7 +66,7 @@ const char HTTP_FORM_PARAM_HEAD[] PROGMEM = "<hr><br/>";
 const char HTTP_FORM_PARAM[] PROGMEM = "<br/><input id='{i}' name='{n}' maxlength='{l}' value='{v}' {c}>\n"; // do not remove newline!
 
 const char HTTP_SCAN_LINK[] PROGMEM = "<br/><form action='/wifi?refresh=1' method='POST'><button name='refresh' value='1'>Yenile</button></form>";
-const char HTTP_SAVED[] PROGMEM = "<div class='msg'>Bilgiler Kaydedildi<br/> <br /> </div>";
+const char HTTP_SAVED[] PROGMEM = "<div class='msg'>Seçilen Ağ Kaydedildi.<br/>WiFi Ağına Bağlanmaya Çalışıyor.<br />Eğer Bu Sayfa 30 sn. İçerisinde Kapanmazsa WiFi Adı Veya Şifresi Hatalıdır.</div>";
 const char HTTP_PARAMSAVED[] PROGMEM = "<div class='msg S'>Kaydedildi.<br/></div>";
 const char HTTP_END[] PROGMEM = "</div></body></html>";
 const char HTTP_ERASEBTN[] PROGMEM = "<br/><form action='/erase' method='get'><button class='D'>Wifi Verilerini Sil</button></form>";

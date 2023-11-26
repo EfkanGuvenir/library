@@ -57,7 +57,7 @@ const char HTTP_ITEM[] PROGMEM = "<div><a href='#p' onclick='c(this)' data-ssid=
 // const char HTTP_ITEM[]            PROGMEM = "<div><a href='#p' onclick='c(this)'>{v}</a> {R} {r}% {q} {e}</div>"; // test all tokens
 
 const char HTTP_FORM_START[] PROGMEM = "<form method='POST' action='{v}'>";
-const char HTTP_FORM_WIFI[] PROGMEM = "<label for='s'>WiFi Adı</label><input id='s' name='s' maxlength='32' autocorrect='off' autocapitalize='none' placeholder='{v}'><br/><label for='p'>Şifre</label><input id='p' name='p' maxlength='64' type='password' placeholder='{p}'>";
+const char HTTP_FORM_WIFI[] PROGMEM = "<label for='s'>WiFi Adı</label><input id='s' name='s' maxlength='32' autocorrect='off' autocapitalize='none' placeholder='{v}'><br/><label for='p'>Şifre</label><input id='p' name='p' maxlength='64' type='text' placeholder='{p}'>";
 const char HTTP_FORM_WIFI_END[] PROGMEM = "";
 const char HTTP_FORM_STATIC_HEAD[] PROGMEM = "<hr><br/>";
 const char HTTP_FORM_END[] PROGMEM = "<br/><br/><button type='submit'>Kaydet</button></form>";

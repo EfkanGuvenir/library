@@ -17,7 +17,7 @@ include(${CMAKE_CURRENT_LIST_DIR}/cmake/PreventInSourceBuilds.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/GetLibInfo.cmake)
 
 # allow CMake CLI options to configure RF24_config.h macros
-option(SERIAL_DEBUG "enable/disable debugging output" OFF)
+option(RF24_DEBUG "enable/disable debugging output" OFF)
 option(MINIMAL "exclude optional source code to keep compile size compact" OFF)
 
 # Link this 'library' to set the c++ standard / compile-time options requested
@@ -115,9 +115,9 @@ else() # utility driver is compiled with the library - not linking to a pre-comp
 endif()
 
 # assert the appropriate preprocessor macros for RF24_config.h
-if(SERIAL_DEBUG)
-    message(STATUS "SERIAL_DEBUG asserted")
-    target_compile_definitions(${LibTargetName} PUBLIC SERIAL_DEBUG)
+if(RF24_DEBUG)
+    message(STATUS "RF24_DEBUG asserted")
+    target_compile_definitions(${LibTargetName} PUBLIC RF24_DEBUG)
 endif()
 if(MINIMAL)
     message(STATUS "MINIMAL asserted")
@@ -136,10 +136,12 @@ if(DEFINED RF24_SPI_SPEED)
         RF24_SPI_SPEED=${RF24_SPI_SPEED}
     )
 endif()
-# conditionally disable interruot support (a pigpio specific feature)
-if("${LibPIGPIO}" STREQUAL "LibPIGPIO-NOTFOUND" OR DEFINED RF24_NO_INTERRUPT)
-    message(STATUS "Disabling IRQ pin support")
-    target_compile_definitions(${LibTargetName} PUBLIC RF24_NO_INTERRUPT)
+# allow user customization of default GPIO chip used with the SPIDEV driver
+if(DEFINED RF24_LINUX_GPIO_CHIP)
+    message(STATUS "RF24_LINUX_GPIO_CHIP set to ${RF24_LINUX_GPIO_CHIP}")
+    target_compile_definitions(${LibTargetName} PUBLIC
+        RF24_LINUX_GPIO_CHIP="${RF24_LINUX_GPIO_CHIP}"
+    )
 endif()
 
 

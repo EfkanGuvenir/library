@@ -11,26 +11,23 @@
 
 #define RF24_LINUX
 
-#include <stddef.h>
+#include <stdint.h> // uint16_t
+#include <stdio.h>  // printf
+#include <string.h> // strlen
 #include "spi.h"
 #include "gpio.h"
 #include "compatibility.h"
-#include <stdint.h>
-#include <stdio.h>
-#include <time.h>
-#include <string.h>
-#include <sys/time.h>
+#include "interrupt.h"
 
 //#define RF24_SPI_SPEED RF24_SPIDEV_SPEED
 
 #define _BV(x) (1 << (x))
 #define _SPI   spi
 
-//#undef SERIAL_DEBUG
-#ifdef SERIAL_DEBUG
-    #define IF_SERIAL_DEBUG(x) ({ x; })
+#ifdef RF24_DEBUG
+    #define IF_RF24_DEBUG(x) ({ x; })
 #else
-    #define IF_SERIAL_DEBUG(x)
+    #define IF_RF24_DEBUG(x)
 #endif
 
 // Avoid spurious warnings
@@ -44,8 +41,6 @@
 #endif
 
 typedef uint16_t prog_uint16_t;
-typedef uint16_t rf24_gpio_pin_t;
-#define RF24_PIN_INVALID 0xFFFF
 
 #define PSTR(x)  (x)
 #define printf_P printf

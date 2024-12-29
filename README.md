@@ -16,5 +16,6 @@ lib_deps =
 	https://github.com/EfkanGuvenir/library#Smoothed
 	https://github.com/EfkanGuvenir/library#VirtualWire
 	https://github.com/EfkanGuvenir/library#ArduinoJson-6.15.2
+	https://github.com/EfkanGuvenir/library#PS4_controller
 ```
 
